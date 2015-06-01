@@ -1,0 +1,25 @@
+<!-- <h2>Index</h2> -->
+
+
+<!-- Add video form -->
+<div id="add-video">
+  <h2>Add video</h2>
+  <form action="/videos" method="POST">
+      <label>Title: </label><input class="input" type="text" name="title" placeholder="Title"autofocus>
+      <label>URL: </label><input class="input" type="text" name="url" placeholder="URL ">
+      <label>Genre: </label><input class="input" type="text" name="genre" placeholder="Genre">
+      <input class="input" type="submit" value="Submit">
+  </form>
+</div>
+<div id="edit-video">
+  <h2>Edit video</h2>
+  <form action="/videos/:id" method="POST">
+      <label>Title: </label><input class="input" type="text" name="title" placeholder="Title"autofocus>
+      <label>URL: </label><input class="input" type="text" name="url" placeholder="URL ">
+      <label>Genre: </label><input class="input" type="text" name="genre" placeholder="Genre">
+      <input class="input" type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- Display of the videos   -->
+<ul id="list-videos"> </ul>
